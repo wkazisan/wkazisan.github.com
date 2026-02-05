@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Rishabh Mishra Portfolio</title>
+    <title>WKA Zisan | Electrical Engineer Portfolio</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
@@ -109,6 +109,40 @@
   transform: scale(1.1);
 }
 
+.hero-clean {
+  background: linear-gradient(135deg, #0d1b2a 0%, #1b263b 50%, #415a77 100%);
+}
+
+.hero-clean .one-third {
+  display: none;
+}
+
+.hero-clean .one-forth {
+  width: 100%;
+  max-width: 100%;
+  justify-content: center;
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+.about-card-clean {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 1.5rem;
+  box-shadow: 0 12px 30px rgba(13, 27, 42, 0.08);
+}
+
+.section-note {
+  color: #6c757d;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 767.98px) {
+  #typing-animation { font-size: 22px; }
+  .hero-clean .one-forth { padding: 6rem 0.75rem 3rem; }
+  .about-info li { flex-direction: column; gap: 2px; }
+}
+
 
 </style>
 
@@ -119,7 +153,7 @@
 	  
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
 	    <div class="container">
-	      <a class="navbar-brand" href="index.html">Rishabh Mishra</a>
+	      <a class="navbar-brand" href="index.html">wkazisan</a>
 	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
 	      </button>
@@ -137,17 +171,14 @@
 	  </nav>
 	  <section id="home-section" class="hero">
 		  <div class="home-slider  owl-carousel">
-	       <div class="slider-item ">
+	       <div class="slider-item hero-clean">
 	      	<div class="overlay"></div>
 	         <div class="container">
-	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_1.png);">
-	          	 <div class="overlay"></div>
-	          	</div>
+	          <div class="row d-md-flex no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
 		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
 		          	<div class="text">
 		          		<span class="subheading">Hello!</span>
-			            <h1 class="mb-4 mt-3">I'm <span>Rishabh Mishra</span></h1>
+			            <h1 class="mb-4 mt-3">I'm <span>WKA Zisan</span></h1>
 
 						<!-- Element to contain animated typing -->
 						<span id="typing-animation"></span>
@@ -159,9 +190,8 @@
 
 						// Create an array of typing text
 						const typingTexts = [
-						'Engineer  ',
-						'YouTuber  ',
-						'Teacher   ',
+						'Diploma Engineer (Electrical)  ',
+						'Electrical Technician  ',
 						];
 
 						// Create a function to display the typing animation for a given text
@@ -187,11 +217,11 @@
 
 						<br>
 						<br>
-			            <h2>A Senior Data Analyst</h2>
+			            <h2>Diploma Engineer (Electrical)</h2>
 						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
 						<!-- <br> -->
-			            <p><a href="https://www.youtube.com/@RishabhMishraOfficial" class="btn btn-primary py-3 px-4">YouTube</a> 
-							<a href="https://github.com/rishabhnmishra" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
+			            <p><a href="#resume-section" class="btn btn-primary py-3 px-4">Resume</a> 
+							<a href="#project-section" class="btn btn-white btn-outline-white py-3 px-4">Projects</a></p>
 		            </div>
 		          </div>
 	        	</div>
@@ -203,268 +233,204 @@
 
 
     <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
-    	<div class="container">
-			<div class="row">
-				<div class="row d-flex align-items-stretch">
-				<!-- <div class="row d-flex"> -->
-					<div class="col-md-6 col-lg-5 d-flex">
-						<div class="img-about img d-flex align-items-stretch">
-							<div class="overlay">
-								<div class="row">
-									<div class="col-sm-6 col-md-5">
-									  <div class="about-img">
-										<img src="images/about-me.png" class="img-fluid rounded b-shadow-a" alt="">
-									  </div>
-									</div>
-									<!-- Details next to profile image -->
-									<div class="col-sm-6 col-md-7">
-									  <div class="about-info">
-										<p><span class="title-s">Name: </span> <span>Rishabh Mishra</span></p>
-										<p><span class="title-s">Job Role: </span> <span>Senior Data Analyst</span></p>
-										<p><span class="title-s">Experience: </span> <span>5 Years 3 Months</span></p>
-										<p><span class="title-s">Address: </span> <span>Bengaluru, India</span></p>
-									  </div>
-									</div>
-								  </div>
+    <div class="container">
+      <div class="row">
+        <div class="row d-flex align-items-stretch">
+          <div class="col-md-6 col-lg-5 d-flex">
+            <div class="img-about img d-flex align-items-stretch w-100">
+              <div class="overlay about-card-clean w-100">
+                <div class="skill-mf">
+                  <p class="title-s">Technical Skills</p>
+                  <ul>
+                    <li>Star-Delta Starter Wiring (Industrial Motors)</li>
+                    <li>Forward &amp; Reverse Motor Control Circuit</li>
+                    <li>Basic Industrial Control Panel Wiring</li>
+                    <li>Motor Installation &amp; Connection</li>
+                    <li>Electrical Maintenance &amp; Fault Troubleshooting</li>
+                    <li>Electrical Safety Practices (Factory Environment)</li>
+                    <li>MS Word (Job Reports &amp; Maintenance Logs)</li>
+                    <li>Basic Prompt Engineering for Technical Documentation</li>
+                    <li>HTML5, CSS3 (Basic), Blogger CMS, Website Administration (Basic)</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
 
-								<div class="skill-mf">
-									<p class="title-s">Skills</p>
-									<span>SQL</span> <span class="pull-right">95%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>PYTHON</span> <span class="pull-right">85%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>Data Visualization</span> <span class="pull-right">90%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>Statistical Analysis</span> <span class="pull-right">85%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>Machine Learning</span> <span class="pull-right">80%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					
-					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
-						<div class="row justify-content-start pb-3">
-							<div class="col-md-12 heading-section ftco-animate">
-								
-								<h1 class="big">About</h1>
-								<h2 class="mb-4">About Me</h2>
-								
-								<p>With over 5 years of comprehensive experience in the field of data science & analytics, accompanied by a bachelor's degree in engineering. 
-									Proficient in data analysis, statistical analysis, hypothesis testing, customer behaviour analysis, &amp; machine learning. 
-									Demonstrated success in leading impactful projects and providing effective mentorship.</p>
-								<ul class="about-info mt-4 px-md-0 px-2">
-									<li class="d-flex"><span>Profile:</span> <span>Data Science &amp; Analytics</span></li>
-									<li class="d-flex"><span>Domain:</span> <span>Retail, Ecommerce, BFSI &amp; Digital Marketing</span></li>
-									<li class="d-flex"><span>Education:</span> <span>Bachelor of Engineering</span></li>
-									<li class="d-flex"><span>Language:</span> <span>English, Hindi</span></li>
-									<li class="d-flex"><span>BI Tools:</span> <span>Microsoft Power BI, Looker &amp; Tableau</span></li>
-									<li class="d-flex"><span>Other Skills:</span> <span>Cloud, PySpark, Excel, Git, JIRA, Google Analytics &amp; SEO</span></li>
-									<li class="d-flex"><span>Interest:</span> <span>Traveling, Travel Photography, Teaching</span></li>
-									
-								</ul>
-							</div>
-						</div>
-
-
-						<div class="counter-wrap ftco-animate d-flex mt-md-3">
-							<div class="text">
-								<p class="mb-4">
-									<span class="number" data-number="30">0</span> <span>+</span>
-									<span>&nbsp; Projects completed</span>
-								</p>
-								<p><a href="https://www.linkedin.com/in/rishabhnmishra/" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+          <div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+            <div class="row justify-content-start pb-3">
+              <div class="col-md-12 heading-section ftco-animate">
+                <h1 class="big">About</h1>
+                <h2 class="mb-4">About Me</h2>
+                <p>Diploma Engineer (Electrical) with hands-on experience in factory and industrial electrical systems, including motor control circuits, industrial wiring, and basic maintenance support.</p>
+                <ul class="about-info mt-4 px-md-0 px-2">
+                  <li class="d-flex"><span>Name:</span> <span>WAIZ KURUNI AHMED ZISAN</span></li>
+                  <li class="d-flex"><span>Profile:</span> <span>Diploma Engineer (Electrical)</span></li>
+                  <li class="d-flex"><span>Phone:</span> <span>+8801823805134</span></li>
+                  <li class="d-flex"><span>Email:</span> <span>ahmedzisan@eee.engr.bd</span></li>
+                  <li class="d-flex"><span>Address:</span> <span>Judebpur, Gazipur (Near DUET)</span></li>
+                  <li class="d-flex"><span>LinkedIn:</span> <span>linkedin.com/in/wkazisan</span></li>
+                </ul>
+              </div>
+            </div>
+            <div class="counter-wrap ftco-animate d-flex mt-md-3">
+              <div class="text">
+                <p class="mb-4"><span>&nbsp;Focused on safe industrial electrical operations and maintenance.</span></p>
+                <p><a href="https://linkedin.com/in/wkazisan" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     </section>
 
 
 
-	
-    <section class="ftco-section ftco-no-pb" id="resume-section">
-    	<div class="container">
-    		<div class="row justify-content-center pb-5">
-          <div class="col-md-10 heading-section text-center ftco-animate">
-          	<h1 class="big big-2">Resume</h1>
-            <h2 class="mb-4">Resume</h2>
-            <p>Seasoned Senior Data Analyst with 5+ years of experience driving business strategies through data-driven insights. Proven expertise in data science, statistical analysis, machine learning algorithms and project management.</p>
+<section class="ftco-section ftco-no-pb" id="resume-section">
+    <div class="container">
+      <div class="row justify-content-center pb-5">
+        <div class="col-md-10 heading-section text-center ftco-animate">
+          <h1 class="big big-2">Resume</h1>
+          <h2 class="mb-4">Resume</h2>
+          <p>Diploma Engineer (Electrical) seeking an entry-level Electrical Technician / Junior Electrical Engineer position in a factory or industrial environment for installation, operation, troubleshooting, and preventive maintenance support.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <h1 class="big-4">Education</h1>
+        <div class="underline"></div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="resume-wrap ftco-animate">
+            <h2>Diploma in Electrical Technology</h2>
+            <span class="position">Mymensingh Polytechnic Institute</span>
+            <p class="mt-4">Course Completed: 2026<br>Result: Awaited</p>
           </div>
         </div>
+        <div class="col-md-6">
+          <div class="resume-wrap ftco-animate">
+            <h2>SSC (Vocational) in General Electronics</h2>
+            <span class="position">Mymensingh Technical Training Center</span>
+            <p class="mt-4">GPA: 5.00 / 5.00<br>Year: 2021</p>
+          </div>
+        </div>
+      </div>
 
-		<div class="row">
-			<h1 class="big-4">Experience</h1>
-			<div class="underline"></div>
-		</div>
-		<br>
-		
-		<div class="row">
-				<div class="col-md-6">
-					<div class="resume-wrap ftco-animate">
-						<span class="date">2021-Present</span>
-						<h2>Senior Data Analyst</h2>
-						<span class="position">Merkle</span>
-						<p class="mt-4">Merkle, a leading CXM and media company with over 10K+ professionals globally. It's a part of Dentsu International. 
-							<ul>
-								<li>Analysed ad campaigns, clickstream, and customer surveys data, identified an increasing demand and launched a strategic product line.</li>
-								<li>Developed time series forecasting models to predict sales and optimize marketing budgets, got model performance of 92%.</li>
-								<li>Designed and executed A/B tests, performed rigorous statistical analysis. Led to 20% MoM increase in the conversion rate.</li>
-							</ul>
-						</p>
-					</div>
+      <br>
+      <div class="row">
+        <h1 class="big-4">Industrial Experience</h1>
+        <div class="underline"></div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="resume-wrap ftco-animate">
+            <span class="date">Technical Internship (3 Months)</span>
+            <h2>Dynamic Engineering Solutions</h2>
+            <ul>
+              <li>Gained hands-on experience in industrial electrical environments.</li>
+              <li>Assisted in electrical wiring, inspection, and basic maintenance tasks.</li>
+              <li>Applied theoretical knowledge to real-world electrical systems.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
 
-				</div>
+      <div class="row">
+        <h1 class="big-4">Work Experience</h1>
+        <div class="underline"></div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="resume-wrap ftco-animate">
+            <span class="date">Sept 2024 – Dec 2024</span>
+            <h2>Sales Leader</h2>
+            <span class="position">Manarah Publication</span>
+            <ul>
+              <li>Achieved monthly sales targets through effective communication and negotiation.</li>
+              <li>Developed client-handling and reporting skills applicable to site coordination.</li>
+              <li>Improved teamwork and responsibility under target-based work pressure.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
 
-				<div class="col-md-6">
-					<div class="resume-wrap ftco-animate">
-						<span class="date">2018-2021</span>
-						<h2>Senior Data Analyst</h2>
-						<span class="position">iQuanti</span>
-						<p class="mt-4">iQuanti is a data-driven digital marketing analytics and solutions company, helps top 100 global brands. 
-							<ul>
-								<li>Performed in-depth market research and analysis to create online pages. Resulted in ~100% website growth and 30% increase in conversion rate YoY.</li>
-								<li>Delivered multiple training and mentorship sessions on analytical tools like SQL, MS Excel, Power BI, Tableau and Python.</li>
-								<li>Performed migration and enhancements for merchandising dashboard, involved data integration and its feature improvement.</li>
-							</ul>
-						</p>
-					</div>
+      <div class="row">
+        <h1 class="big-4">Training &amp; Co-curricular Activities</h1>
+        <div class="underline"></div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="resume-wrap ftco-animate">
+            <ul>
+              <li>Member, Convening Committee (Bikkhon Wing).</li>
+              <li>Member, Reception &amp; Hospitality Sub-committee.</li>
+              <li>Mymensingh Sahitya Sangsad (2023–2024).</li>
+              <li>Represented youth at divisional-level cultural programs.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
 
-				</div>
-			</div>
-
-		<br>
-		<br>
-
-		<div class="row">
-			<h1 class="big-4">Education</h1>
-			<div class="underline"></div>
-		</div>
-		<br>
-		
-			<div class="row">
-    			<div class="col-md-6">
-    				<div class="resume-wrap ftco-animate">
-    					<span class="date">2014-2018</span>
-    					<h2>Bachelor of Engineering</h2>
-    					<span class="position">Visvesvaraya Technological University</span>
-    					<p class="mt-4">Grade: First class distinction.</p>
-    				</div>
-    			</div>
-
-    			<div class="col-md-6">
-    				<div class="resume-wrap ftco-animate">
-    					<span class="date">2012-2013</span>
-    					<h2>Higher Secondary School</h2>
-    					<span class="position">Army Public School</span>
-    					<p class="mt-4">Grade: First class distinction.</p>
-    				</div>
-				</div>
-    		</div>
-
-    		<div class="row justify-content-center mt-5">
-    			<div class="col-md-6 text-center ftco-animate">
-    				<p><a href="#" class="btn btn-primary py-4 px-5">Download CV</a></p>
-    			</div>
-    		</div>
-    	</div>
+      <div class="row">
+        <h1 class="big-4">Additional Information</h1>
+        <div class="underline"></div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="resume-wrap ftco-animate">
+            <ul>
+              <li>Willing to work in factory, site, or maintenance environments.</li>
+              <li>Ready for shift duty and field work.</li>
+              <li>Quick learner with strong discipline and teamwork mindset.</li>
+            </ul>
+            <p class="section-note">References: Available on request.</p>
+          </div>
+        </div>
+      </div>
+    </div>
     </section>
 
    
 
-    <section class="ftco-section" id="project-section">
+<section class="ftco-section" id="project-section">
       <div class="container">
         <div class="row justify-content-center mb-5 pb-5">
           <div class="col-md-7 heading-section text-center ftco-animate">
             <h1 class="big big-2">Projects</h1>
             <h2 class="mb-4">Projects</h2>
-            <p>Below are the sample Data Analytics projects on SQL, Python, Power BI & ML.</p>
+            <p>Selected electrical and technical projects focused on practical factory and control-panel applications.</p>
           </div>
         </div>
-        <div class="row d-flex">
-          <div class="col-md-4 d-flex ftco-animate">
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-5 d-flex ftco-animate">
           	<div class="blog-entry justify-content-end">
-              <a href="https://github.com/rishabhnmishra/SQL_Music_Store_Analysis/blob/main/Music_Store_Query.sql" class="block-20 zoom-effect" style="background-image: url('images/proj_1.jpg');">
+              <a href="#" class="block-20 zoom-effect" style="background-image: url('images/proj_1.jpg');">
               </a>
               <div class="text mt-3 float-right d-block">
-
-                <h3 class="heading"><a href="https://github.com/rishabhnmishra/SQL_Music_Store_Analysis/blob/main/Music_Store_Query.sql">Digital Music Store Data Analysis using SQL</a></h3>
-                <p>Analyzed music store data using advanced SQL queires to identify gaps and increase the business growth.</p>
+                <h3 class="heading"><a href="#">Final Year Project: Star-Delta Forward &amp; Reverse Motor Control Panel</a></h3>
+                <p>Designed and wired a motor control panel with safety interlocking, forward-reverse operation logic, and fault troubleshooting.</p>
               </div>
             </div>
           </div>
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry justify-content-end">
-              <a href="https://github.com/rishabhnmishra/Python_Diwali_Sales_Analysis/blob/main/Diwali_Sales_Analysis.ipynb" class="block-20 zoom-effect" style="background-image: url('images/proj_2.jpg');">
-              </a>
-              <div class="text mt-3 float-right d-block">
-
-                <h3 class="heading"><a href="https://github.com/rishabhnmishra/Python_Diwali_Sales_Analysis/blob/main/Diwali_Sales_Analysis.ipynb">Data Analysis using Python Project for Beginners</a></h3>
-                <p>Performed exploratory data analysis on diwali sales data using Python to improve the customer experience.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 d-flex ftco-animate">
+          <div class="col-md-5 d-flex ftco-animate">
           	<div class="blog-entry">
-              <a href="https://github.com/rishabhnmishra/Madhav_Store_Analysis_PowerBI/blob/main/Madhav%20Store%20dashboard.jpg" class="block-20 zoom-effect" style="background-image: url('images/proj_3.jpg');">
+              <a href="#" class="block-20 zoom-effect" style="background-image: url('images/proj_2.jpg');">
               </a>
               <div class="text mt-3 float-right d-block">
-
-                <h3 class="heading"><a href="https://github.com/rishabhnmishra/Madhav_Store_Analysis_PowerBI/blob/main/Madhav%20Store%20dashboard.jpg">Power BI Sales dashboard Project for Beginners</a></h3>
-                <p>Designed a power bi dashboard for Madhav Store to track and analyze the online sales data acorss India.</p>
+                <h3 class="heading"><a href="#">Cryptogram BD – Digital Content &amp; Web Platform</a></h3>
+                <p>Developed a basic web platform using HTML5, CSS3, and Blogger CMS with content publishing and website administration.</p>
               </div>
             </div>
           </div>
         </div>
-	<br>
-		<!-- added justify-content-center to center align the last two projects -->
-		<div class="row d-flex justify-content-center">  
-			<div class="col-md-4 d-flex ftco-animate">
-				<div class="blog-entry justify-content-end">
-				<a href="https://github.com/rishabhnmishra/sales_forecasting/tree/main" class="block-20 zoom-effect" style="background-image: url('images/proj_4.jpg');">
-				</a>
-				<div class="text mt-3 float-right d-block">
-  
-				  <h3 class="heading"><a href="https://github.com/rishabhnmishra/sales_forecasting/tree/main">Sales Forecast- Time Series Forecasting</a></h3>
-				  <p>Used multiple machine learning models to forecast sales (retail store) and performed time series analysis.</p>
-				</div>
-			  </div>
-			</div>
-			<div class="col-md-4 d-flex ftco-animate">
-				<div class="blog-entry justify-content-end">
-				<a href="https://github.com/rishabhnmishra/customer_segmentation/blob/main/Customer_Segmentation-final.ipynb" class="block-20 zoom-effect" style="background-image: url('images/proj_5.jpg');">
-				</a>
-				<div class="text mt-3 float-right d-block">
-  
-				  <h3 class="heading"><a href="https://github.com/rishabhnmishra/customer_segmentation/blob/main/Customer_Segmentation-final.ipynb">Customer Segmentation using clustering model</a></h3>
-				  <p>Developed a ML model to give various recommendations of financial products &amp; services on target customer groups.</p>
-				</div>
-			  </div>
-			</div>
-		 </div>
-	  </div>
+      </div>
     </section>
 
 	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
@@ -473,46 +439,46 @@
           <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
             <div class="block-18">
               <div class="text">
-                <strong class="number" data-number="20">0</strong>
-                <span>Achievements</span>
+                <strong class="number" data-number="3">0</strong>
+                <span>Months Internship</span>
               </div>
             </div>
           </div>
           <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
             <div class="block-18">
               <div class="text">
-                <strong class="number" data-number="30">0</strong>
-                <span>Projects</span>
+                <strong class="number" data-number="2">0</strong>
+                <span>Key Projects</span>
               </div>
             </div>
           </div>
           <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
             <div class="block-18">
               <div class="text">
-                <strong class="number" data-number="1000">0</strong>
-                <span>Mentored Students</span>
+                <strong class="number" data-number="1">0</strong>
+                <span>Career Objective</span>
               </div>
             </div>
           </div>
           <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
             <div class="block-18">
               <div class="text">
-                <strong class="number" data-number="500">0</strong>
-                <span>Cups of coffee</span>
+                <strong class="number" data-number="2026">0</strong>
+                <span>Diploma Completion</span>
               </div>
             </div>
           </div>
         </div>
       </div>
 	
-	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+	  <div class="ftco-section ftco-hireme img margin-top" style="background: #0d1b2a;">
 			<!-- <div class="container"> -->
 				<div class="row justify-content-center">
 					<div class="col-md-7 ftco-animate text-center">
-						<h2>More projects on<span> Github  </span> </h2>
-						<div class="heading"> <h4> I love to solve business problems &amp; uncover hidden data stories </h4>
+						<h2>View my <span>Resume Profile</span></h2>
+						<div class="heading"> <h4>Ready for shift duty, field work, and preventive maintenance support in industrial environments.</h4>
 						<br>
-						<p><a href="https://github.com/rishabhnmishra" class="btn btn-primary py-3 px-5">GitHub</a></p>
+						<p><a href="#resume-section" class="btn btn-primary py-3 px-5">Open Resume</a></p>
 						</div>
 					</div>
 				</div>
@@ -539,7 +505,7 @@
           			<span class="icon-map-signs"></span>
           		</div>
           		<h3 class="mb-4">Address</h3>
-	            <p>Bengaluru, India</p>
+	            <p>Judebpur, Gazipur (Near DUET)</p>
 	          </div>
           </div>
           <div class="col-md-6 col-lg-3 d-flex ftco-animate">
@@ -548,7 +514,7 @@
           			<span class="icon-phone2"></span>
           		</div>
           		<h3 class="mb-4">Contact Number</h3>
-	            <p><a href="tel://0101010101">+ 0 101 0101 101</a></p>
+	            <p><a href="tel:+8801823805134">+8801823805134</a></p>
 	          </div>
           </div>
           <div class="col-md-6 col-lg-3 d-flex ftco-animate">
@@ -557,7 +523,7 @@
           			<span class="icon-paper-plane"></span>
           		</div>
           		<h3 class="mb-4">Email Address</h3>
-	            <p><a href="mailto:info@yoursite.com">conctact@domainname.com</a></p>
+	            <p><a href="mailto:ahmedzisan@eee.engr.bd">ahmedzisan@eee.engr.bd</a></p>
 	          </div>
           </div>
           <div class="col-md-6 col-lg-3 d-flex ftco-animate">
@@ -565,8 +531,8 @@
           		<div class="icon d-flex align-items-center justify-content-center">
           			<span class="icon-globe"></span>
           		</div>
-          		<h3 class="mb-4">Download Resume</h3>
-	            <p><a href="#">resumelink</a></p>
+          		<h3 class="mb-4">LinkedIn</h3>
+	            <p><a href="https://linkedin.com/in/wkazisan">linkedin.com/in/wkazisan</a></p>
 	          </div>
           </div>
 
@@ -575,17 +541,13 @@
 			<br>
 			<div class="row justify-content-center">
 				<div class="col-md-7 ftco-animate text-center">
-					<h2>Have a<span> Question?  </span> <a href="https://forms.gle/uLaTShUKXraAvHJ77" class="btn btn-primary py-3 px-5">Click Here</a> </h2>
+					<h2>Open to <span>Electrical Support Roles</span></h2>
 				</div>
 			</div>
 				<br>
 					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
-					  <li class="ftco-animate normal-txt">Find me on  </li>
-					  <li class="ftco-animate"><a href="https://www.youtube.com/@RishabhMishraOfficial"><span class="icon-youtube"></span></a></li>
-					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/rishabhnmishra/"><span class="icon-linkedin"></span></a></li>  
-					  <li class="ftco-animate"><a href="https://twitter.com/rishabhnmishra"><span class="icon-twitter"></span></a></li>
-					  <li class="ftco-animate"><a href="https://twitter.com/rishabhnmishra"><span class="icon-facebook"></span></a></li>
-				      <li class="ftco-animate"><a href="https://www.instagram.com/rishabhnmishra/"><span class="icon-instagram"></span></a></li>
+					  <li class="ftco-animate normal-txt">Find me on</li>
+					  <li class="ftco-animate"><a href="https://linkedin.com/in/wkazisan"><span class="icon-linkedin"></span></a></li>
 					</ul>
 				<br>
 		   </div>

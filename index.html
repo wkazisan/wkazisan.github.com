@@ -57,47 +57,6 @@
 }
 
 
-/* Animation styles */
-#typing-animation {
-  position: relative;
-  font-size: 30px;
-  font-weight: bold;
-  color: rgb(255, 255, 255);
-  overflow: hidden;
-  white-space: nowrap;
-  animation: typing 3s steps(20, end) infinite;
-}
-
-#typing-animation:before {
-  content: "";
-  /* position: absolute; */
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background-color: #ccc;
-  animation: typing-cursor 0.5s ease-in-out infinite;
-}
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-@keyframes typing-cursor {
-  from {
-    width: 5px;
-  }
-  to {
-    width: 0;
-  }
-}
-
-
 /* project image zoom effect */
 
 .zoom-effect {
@@ -107,6 +66,51 @@
 
 .zoom-effect:hover {
   transform: scale(1.1);
+}
+
+.hero-clean {
+  background: linear-gradient(135deg, #0d1b2a 0%, #1b263b 50%, #415a77 100%);
+}
+
+.hero-clean .one-third {
+  display: none;
+}
+
+.hero-clean .one-forth {
+  width: 100%;
+  max-width: 100%;
+  justify-content: center;
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+.about-card-clean {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 1.5rem;
+  box-shadow: 0 12px 30px rgba(13, 27, 42, 0.08);
+}
+
+.section-note {
+  color: #6c757d;
+  font-size: 0.95rem;
+}
+
+.about-card-clean .skill-mf,
+.about-card-clean .skill-mf p,
+.about-card-clean .skill-mf li {
+  color: #111111;
+}
+
+.blog-entry {
+  width: 100%;
+}
+
+@media (max-width: 767.98px) {
+  .blog-entry { margin-bottom: 1.25rem; }
+  .block-20 { min-height: 220px; }
+  .hero-clean .one-forth { padding: 6rem 0.75rem 3rem; }
+  .about-info li { flex-direction: column; gap: 2px; }
 }
 
 .hero-clean {
@@ -180,48 +184,15 @@
 		          		<span class="subheading">Hello!</span>
 			            <h1 class="mb-4 mt-3">I'm <span>WKA Zisan</span></h1>
 
-						<!-- Element to contain animated typing -->
-						<span id="typing-animation"></span>
-
-						<script>
-
-						// Initialize the typing animation
-						const typingAnimationElement = document.getElementById('typing-animation');
-
-						// Create an array of typing text
-						const typingTexts = [
-						'Diploma Engineer (Electrical)  ',
-						'Electrical Technician  ',
-						];
-
-						// Create a function to display the typing animation for a given text
-						function playTypingAnimation(text) {
-						// Loop through each character and add it to the element
-						for (let i = 0; i < text.length; i++) {
-							setTimeout(() => {
-							typingAnimationElement.textContent += text[i];
-							}, i * 200); // Increase the delay to slow down the typing animation
-						}
-
-						// Once the animation is complete, reset the text and start over
-						setTimeout(() => {
-							typingAnimationElement.textContent = '';
-							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
-						}, text.length * 200);
-						}
-
-						// Start the typing animation loop
-						playTypingAnimation(typingTexts[0]);
-
-						</script>
+						
 
 						<br>
 						<br>
-			            <h2>Diploma Engineer (Electrical)</h2>
+			            <h2>Electrical Technician</h2>
 						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
 						<!-- <br> -->
 			            <p><a href="#resume-section" class="btn btn-primary py-3 px-4">Resume</a> 
-							<a href="#project-section" class="btn btn-white btn-outline-white py-3 px-4">Projects</a></p>
+							<a href="https://github.com/wkazisan" class="btn btn-white btn-outline-white py-3 px-4">GitHub</a></p>
 		            </div>
 		          </div>
 	        	</div>
@@ -328,7 +299,7 @@
       <div class="row">
         <div class="col-md-12">
           <div class="resume-wrap ftco-animate">
-            <span class="date">Technical Internship (3 Months)</span>
+            <span class="date">Technical Internship</span>
             <h2>Dynamic Engineering Solutions</h2>
             <ul>
               <li>Gained hands-on experience in industrial electrical environments.</li>
@@ -411,7 +382,7 @@
         <div class="row d-flex justify-content-center">
           <div class="col-md-5 d-flex ftco-animate">
           	<div class="blog-entry justify-content-end">
-              <a href="#" class="block-20 zoom-effect" style="background-image: url('images/proj_1.jpg');">
+              <a href="#" class="block-20 zoom-effect" style="background-image: url('https://blogger.googleusercontent.com/img/a/AVvXsEgBOye2XFLH7e5uaC3NT1-ZrNL9ccmQ4IW18Vn2f3pAi3ajlyVhbFCQbAjos7CVJnNQ5mfpArsMZPLl7G7K8J9AtnfmNx4Ih_sJaDkHJ1c0Nyo_JR6B_0LJ9DAOQJQM4TIYIgGB1SCwLQkQQdGkpk2D-r-mhsMMBOBV8BAV5LUIOvqrUUGsXafaPuQm_iyp=s16000');">
               </a>
               <div class="text mt-3 float-right d-block">
                 <h3 class="heading"><a href="#">Final Year Project: Star-Delta Forward &amp; Reverse Motor Control Panel</a></h3>
@@ -421,7 +392,7 @@
           </div>
           <div class="col-md-5 d-flex ftco-animate">
           	<div class="blog-entry">
-              <a href="#" class="block-20 zoom-effect" style="background-image: url('images/proj_2.jpg');">
+              <a href="#" class="block-20 zoom-effect" style="background-image: url('https://web.archive.org/web/20250529105033im_/https://cryptogrambd.com/wp-content/uploads/2025/01/humanity.png');">
               </a>
               <div class="text mt-3 float-right d-block">
                 <h3 class="heading"><a href="#">Cryptogram BD – Digital Content &amp; Web Platform</a></h3>
@@ -439,8 +410,8 @@
           <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
             <div class="block-18">
               <div class="text">
-                <strong class="number" data-number="3">0</strong>
-                <span>Months Internship</span>
+                <strong class="number" data-number="2">0</strong>
+                <span>Featured Projects</span>
               </div>
             </div>
           </div>
@@ -463,8 +434,8 @@
           <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
             <div class="block-18">
               <div class="text">
-                <strong class="number" data-number="2026">0</strong>
-                <span>Diploma Completion</span>
+                <strong class="number" data-number="1">0</strong>
+                <span>GitHub Profile</span>
               </div>
             </div>
           </div>
@@ -531,8 +502,8 @@
           		<div class="icon d-flex align-items-center justify-content-center">
           			<span class="icon-globe"></span>
           		</div>
-          		<h3 class="mb-4">LinkedIn</h3>
-	            <p><a href="https://linkedin.com/in/wkazisan">linkedin.com/in/wkazisan</a></p>
+          		<h3 class="mb-4">Profiles</h3>
+	            <p><a href="https://linkedin.com/in/wkazisan">linkedin.com/in/wkazisan</a><br><a href="https://github.com/wkazisan">github.com/wkazisan</a></p>
 	          </div>
           </div>
 
@@ -548,6 +519,7 @@
 					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
 					  <li class="ftco-animate normal-txt">Find me on</li>
 					  <li class="ftco-animate"><a href="https://linkedin.com/in/wkazisan"><span class="icon-linkedin"></span></a></li>
+					  <li class="ftco-animate"><a href="https://github.com/wkazisan"><span class="icon-github"></span></a></li>
 					</ul>
 				<br>
 		   </div>

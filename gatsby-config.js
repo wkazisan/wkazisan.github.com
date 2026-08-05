@@ -38,7 +38,6 @@ module.exports = {
         icon: 'src/images/logo.png',
       },
     },
-    
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -51,13 +50,6 @@ module.exports = {
       options: {
         name: 'content',
         path: `${__dirname}/content/`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `posts`,
-        path: `${__dirname}/content/posts`,
       },
     },
     {

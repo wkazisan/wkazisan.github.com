@@ -52,6 +52,14 @@ module.exports = {
         path: `${__dirname}/content/`,
       },
     },
+    // Posts folder configuration added back
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `posts`,
+        path: `${__dirname}/content/posts`,
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {

@@ -1,16 +1,20 @@
 ---
-date: '2026-06-27'
+date: '2026-07-06'
 title: 'Automatic Coffee Mixer Machine'
-github: ''
-external: ''
-ios: ''
-android: ''
-showInProjects: true
-draft: false
+github: 'https://github.com/wkazisan'
+external: 'https://www.linkedin.com/in/wkazisan'
 tech:
   - Timer/Counter Logic
   - Motor Control
   - FMCG Automation
+company: ''
+showInProjects: true
 ---
 
-Designed the automated control sequence for an Automatic Coffee Mixer typically used in the FMCG sector. Implemented precise timer and relay logic to accurately control the blending, heating, and dispensing processes.
+Programmed timer and counter-based relay logic for an automatic coffee mixing and dispensing machine.
+
+- **Tools Used:** Timers, Counters, Micro PLC/Relays
+- **Industry:** Food & Beverage, Commercial Appliances
+- **Key Learnings:** Precise timer/counter programming and automated dispensing logic.
+
+*Please visit my LinkedIn profile for full project pictures and detailed documentation.*

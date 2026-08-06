@@ -1,16 +1,20 @@
 ---
-date: '2026-06-26'
+date: '2026-07-01'
 title: 'Automatic Boiler Control System'
-github: ''
-external: ''
-ios: ''
-android: ''
-showInProjects: true
-draft: false
+github: 'https://github.com/wkazisan'
+external: 'https://www.linkedin.com/in/wkazisan'
 tech:
   - Process Control
   - Temp/Pressure Sensors
   - Safety Interlocking
+company: ''
+showInProjects: true
 ---
 
-Developed an automated logic control system for industrial boilers. Integrated temperature and pressure sensors, and implemented strict electrical safety interlocking to ensure safe heating operations and prevent over-pressurization.
+Designed a fully automated boiler control system ensuring precise temperature and pressure regulation.
+
+- **Tools Used:** PLC, Temp/Pressure Sensors, Relay Logic
+- **Industry:** Power Plant, Manufacturing
+- **Key Learnings:** Safety interlocking, pressure regulation, and analog sensor integration.
+
+*Please visit my LinkedIn profile for full project pictures and detailed documentation.*

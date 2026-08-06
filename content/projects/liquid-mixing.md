@@ -1,15 +1,20 @@
 ---
-date: '2026-07-07'
+date: '2026-07-02'
 title: 'Automated Boiler & Industrial Liquid Mixing System'
-cover: './boiler-mixing.png'
-github: ''
-external: ''
+github: 'https://github.com/wkazisan'
+external: 'https://www.linkedin.com/in/wkazisan'
 tech:
   - Process Control
   - Level/Temp Sensors
   - PLC Automation Logic
+company: ''
+showInProjects: true
 ---
 
-- Designed an Automated Boiler control system ensuring strict pressure and temperature safety loops[cite: 1].
-- Developed an Automatic Liquid Mixing logic for chemical and FMCG tanks, enabling precise ratio blending[cite: 1].
-- Integrated level sensors and automated valves to prevent overflow and ensure uninterrupted process flow[cite: 1].
+Developed a PLC-based automated liquid mixing system integrated with boiler temperature controls.
+
+- **Tools Used:** Siemens S7-1200 PLC, Level Sensors, Solenoid Valves
+- **Industry:** FMCG, Chemical, Food Processing
+- **Key Learnings:** Continuous process control, multi-tank level management, and automated mixing logic.
+
+*Please visit my LinkedIn profile for full project pictures and detailed documentation.*

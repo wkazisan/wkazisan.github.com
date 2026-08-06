@@ -1,16 +1,20 @@
 ---
-date: '2026-06-28'
+date: '2026-07-05'
 title: 'Smart Facility & Logistics Automation'
-github: ''
-external: ''
-ios: ''
-android: ''
-showInProjects: true
-draft: false
+github: 'https://github.com/wkazisan'
+external: 'https://www.linkedin.com/in/wkazisan'
 tech:
   - Relay Logic
   - Proximity Sensors
   - Motor Control
+company: ''
+showInProjects: true
 ---
 
-Implemented automation solutions for facility management. Successfully designed an Automatic Door System, synchronized a Dual Conveyor Belt for material handling, and developed a Smart Car Parking Project with barrier control[cite: 1].
+Created smart facility solutions including dual conveyor belt systems and automated logistics handling.
+
+- **Tools Used:** Relay Logic, Motor Starters, Dual Conveyor Belts
+- **Industry:** Logistics, Warehouse, Textile
+- **Key Learnings:** Material handling efficiency, sequential motor operation, and facility automation.
+
+*Please visit my LinkedIn profile for full project pictures and detailed documentation.*

@@ -1,16 +1,20 @@
 ---
-date: '2026-06-23'
-title: 'Smart Car Parking & Automatic Door'
-github: ''
-external: ''
-ios: ''
-android: ''
-showInProjects: true
-draft: false
+date: '2026-07-07'
+title: 'Smart Car Parking & Automatic Door System'
+github: 'https://github.com/wkazisan'
+external: 'https://www.linkedin.com/in/wkazisan'
 tech:
   - Motion Sensors
   - Relay Logic
   - Facility Automation
+company: ''
+showInProjects: true
 ---
 
-Designed a Smart Car Parking logic and an Automatic Door System for modern facility management. Utilized motion sensors and motor controllers to automate boom barriers and sliding doors efficiently based on real-time presence detection.
+Developed logic for an automatic door and smart car parking system utilizing proximity sensors and actuator control.
+
+- **Tools Used:** Motion Sensors, Limit Switches, Actuators
+- **Industry:** Facility Management, Commercial Buildings
+- **Key Learnings:** Proximity detection, actuator control, and automated entry/exit sequences.
+
+*Please visit my LinkedIn profile for full project pictures and detailed documentation.*

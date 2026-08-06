@@ -1,53 +1,150 @@
-import React, { useState, useEffect } from 'react';
-import { CSSTransition, TransitionGroup } from 'react-transition-group';
+import React, { useEffect, useRef } from 'react';
+import { StaticImage } from 'gatsby-plugin-image';
 import styled from 'styled-components';
-import { navDelay, loaderDelay } from '@utils';
+import { srConfig } from '@config';
+import sr from '@utils/sr';
 import { usePrefersReducedMotion } from '@hooks';
 
-const StyledHeroSection = styled.section`
-  ${({ theme }) => theme.mixins.flexCenter};
-  flex-direction: column;
-  align-items: flex-start;
-  min-height: 100vh;
-  height: 100vh;
-  padding: 0;
+const StyledAboutSection = styled.section`
+  max-width: 900px;
 
-  @media (max-height: 700px) and (min-width: 700px), (max-width: 360px) {
-    height: auto;
-    padding-top: var(--nav-height);
-  }
+  .inner {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 50px;
 
-  h1 {
-    margin: 0 0 30px 4px;
-    color: var(--green);
-    font-family: var(--font-mono);
-    font-size: clamp(var(--fz-sm), 5vw, var(--fz-md));
-    font-weight: 400;
-
-    @media (max-width: 480px) {
-      margin: 0 0 20px 2px;
+    @media (max-width: 768px) {
+      display: block;
     }
   }
 
-  h3 {
-    margin-top: 5px;
-    color: var(--slate);
-    line-height: 0.9;
-  }
+  ul.skills-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(140px, 200px));
+    gap: 0 10px;
+    padding: 0;
+    margin: 20px 0 0 0;
+    overflow: hidden;
+    list-style: none;
 
-  p {
-    margin: 20px 0 0;
-    max-width: 540px;
-  }
+    li {
+      position: relative;
+      margin-bottom: 10px;
+      padding-left: 20px;
+      font-family: var(--font-mono);
+      font-size: var(--fz-xs);
 
-  .email-link {
-    ${({ theme }) => theme.mixins.bigButton};
-    margin-top: 50px;
+      &:before {
+        content: '▹';
+        position: absolute;
+        left: 0;
+        color: var(--green);
+        font-size: var(--fz-sm);
+        line-height: 12px;
+      }
+    }
   }
 `;
 
-const Hero = () => {
-  const [isMounted, setIsMounted] = useState(false);
+const StyledText = styled.div`
+  ul.skills-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(140px, 200px));
+    gap: 0 10px;
+    padding: 0;
+    margin: 20px 0 0 0;
+    overflow: hidden;
+    list-style: none;
+
+    li {
+      position: relative;
+      margin-bottom: 10px;
+      padding-left: 20px;
+      font-family: var(--font-mono);
+      font-size: var(--fz-xs);
+
+      &:before {
+        content: '▹';
+        position: absolute;
+        left: 0;
+        color: var(--green);
+        font-size: var(--fz-sm);
+        line-height: 12px;
+      }
+    }
+  }
+`;
+
+const StyledPic = styled.div`
+  position: relative;
+  max-width: 300px;
+
+  @media (max-width: 768px) {
+    margin: 50px auto 0;
+    width: 70%;
+  }
+
+  .wrapper {
+    ${({ theme }) => theme.mixins.boxShadow};
+    display: block;
+    position: relative;
+    width: 100%;
+    border-radius: var(--border-radius);
+    background-color: var(--green);
+
+    &:hover,
+    &:focus {
+      background: transparent;
+      outline: 0;
+
+      &:after {
+        top: 15px;
+        left: 15px;
+      }
+
+      .img {
+        filter: none;
+        mix-blend-mode: normal;
+      }
+    }
+
+    .img {
+      position: relative;
+      border-radius: var(--border-radius);
+      mix-blend-mode: multiply;
+      filter: grayscale(100%) contrast(1);
+      transition: var(--transition);
+    }
+
+    &:before,
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: var(--border-radius);
+      transition: var(--transition);
+    }
+
+    &:before {
+      top: 0;
+      left: 0;
+      background-color: var(--navy);
+      mix-blend-mode: screen;
+    }
+
+    &:after {
+      border: 2px solid var(--green);
+      top: 20px;
+      left: 20px;
+      z-index: -1;
+    }
+  }
+`;
+
+const About = () => {
+  const revealContainer = useRef(null);
   const prefersReducedMotion = usePrefersReducedMotion();
 
   useEffect(() => {
@@ -55,57 +152,60 @@ const Hero = () => {
       return;
     }
 
-    const timeout = setTimeout(() => setIsMounted(true), navDelay);
-    return () => clearTimeout(timeout);
+    sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const one = <h1>Hi, my name is</h1>;
-  const two = <h2 className="big-heading">Waiz Kuruni Ahmed Zisan.</h2>;
-  const three = <h3 className="big-heading">I work with electrical systems.</h3>;
-  const four = (
-    <>
-      <p>
-        I’m an electrical engineer specializing in industrial systems and motor control. Currently expanding my expertise in electrical design and maintenance through hands-on self-learning.
-        {/* {' '}
-        <a href="https://upstatement.com/" target="_blank" rel="noreferrer">
-          Upstatement
-        </a>
-        . */}
-      </p>
-    </>
-  );
-  const five = (
-    <a
-      className="email-link"
-      href="https://wkazisan.pro.bd/pensieve"
-      target="_blank"
-      rel="noreferrer">
-      Check out my blog!
-    </a>
-  );
-
-  const items = [one, two, three, four, five];
+  const skills = [
+    'Siemens S7-1200 PLC',
+    'VFD & HMI Integration',
+    'RLC & MCC Logic',
+    'AutoCAD & ETAP',
+    'MS Office & Workspace',
+    'HTML, CSS & GitHub',
+  ];
 
   return (
-    <StyledHeroSection>
-      {prefersReducedMotion ? (
-        <>
-          {items.map((item, i) => (
-            <div key={i}>{item}</div>
-          ))}
-        </>
-      ) : (
-        <TransitionGroup component={null}>
-          {isMounted &&
-            items.map((item, i) => (
-              <CSSTransition key={i} classNames="fadeup" timeout={loaderDelay}>
-                <div style={{ transitionDelay: `${i + 1}00ms` }}>{item}</div>
-              </CSSTransition>
-            ))}
-        </TransitionGroup>
-      )}
-    </StyledHeroSection>
+    <StyledAboutSection id="about" ref={revealContainer}>
+      <h2 className="numbered-heading">About Me</h2>
+
+      <div className="inner">
+        <StyledText>
+          <div>
+            <p>
+              Hello! My name is Zisan, and I enjoy working with electrical systems and industrial control technologies. My interest in electrical engineering started during my diploma studies, where I began exploring motor control circuits and industrial wiring practices. Building and wiring control panels helped me understand the practical side of electrical systems beyond textbooks.
+            </p>
+            <p>
+              Fast-forward to today, I have completed comprehensive industrial training at{' '}
+              <span className="inline-link">Ulterior Engineering Ltd</span>, gained practical experience at{' '}
+              <span className="inline-link">Dynamic Engineering Solutions (DES)</span>, and worked in leadership roles at{' '}
+              <span className="inline-link">Manarah Publication</span> and <strong>Bikkhon</strong>. I also have digital experience managing my own platform, <strong>cryptogrambd.com</strong>.
+            </p>
+            <p>
+              My main focus these days is building strong hands-on experience in <strong>Industrial Automation</strong>, alongside expanding my skill set in AutoCAD Electrical, ETAP, and Solar Off-Grid Systems. I am also certified as a Google AI for K12 Educator and hold an EF SET B2 English Certificate.
+            </p>
+            <p>Here are a few technologies I've been working with recently:</p>
+          </div>
+
+          <ul className="skills-list">
+            {skills && skills.map((skill, i) => <li key={i}>{skill}</li>)}
+          </ul>
+        </StyledText>
+
+        <StyledPic>
+          <div className="wrapper">
+            <StaticImage
+              className="img"
+              src="../../images/me.jpg"
+              width={500}
+              quality={95}
+              formats={['AUTO', 'WEBP', 'AVIF']}
+              alt="Headshot"
+            />
+          </div>
+        </StyledPic>
+      </div>
+    </StyledAboutSection>
   );
 };
 
-export default Hero;
+export default About;

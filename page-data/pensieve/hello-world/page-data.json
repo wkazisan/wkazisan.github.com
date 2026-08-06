@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-post-js",
+    "path": "/pensieve/hello-world",
+    "result": {"data":{"markdownRemark":{"html":"<p>This is a dummy post. I will add my technical articles and poems here in the future.</p>","frontmatter":{"title":"Hello World","description":"This is a placeholder post to keep the blog system active.","date":"2026-08-06","slug":"/pensieve/hello-world","tags":["Automation","Electrical"]}}},"pageContext":{}},
+    "staticQueryHashes": ["1994492073","2009693873","2031412112","3825832676"]}

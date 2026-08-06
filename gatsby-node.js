@@ -7,6 +7,28 @@
 const path = require('path');
 const _ = require('lodash');
 
+// গ্যাটসবিকে স্কিমা সম্পর্কে স্পষ্টভাবে বলে দেওয়া হলো (Image Error Fix)
+exports.createSchemaCustomization = ({ actions }) => {
+  const { createTypes } = actions;
+  const typeDefs = `
+    type MarkdownRemark implements Node {
+      frontmatter: Frontmatter
+    }
+    type Frontmatter {
+      title: String
+      tech: [String]
+      github: String
+      external: String
+      ios: String
+      android: String
+      showInProjects: Boolean
+      draft: Boolean
+      cover: File @fileByRelativePath
+    }
+  `;
+  createTypes(typeDefs);
+};
+
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions;
   const postTemplate = path.resolve(`src/templates/post.js`);

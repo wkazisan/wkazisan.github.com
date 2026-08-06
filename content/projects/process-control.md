@@ -3,6 +3,10 @@ date: '2026-06-30'
 title: 'Automated Process Control Systems'
 github: ''
 external: ''
+ios: ''
+android: ''
+showInProjects: true
+draft: false
 tech:
   - Boiler Control
   - Liquid Mixing

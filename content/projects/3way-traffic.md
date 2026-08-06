@@ -3,6 +3,10 @@ date: '2026-06-25'
 title: '3-Way Traffic Light Control System'
 github: ''
 external: ''
+ios: ''
+android: ''
+showInProjects: true
+draft: false
 tech:
   - PLC Sequential Logic
   - Timer Instructions

@@ -1,7 +1,7 @@
 ---
 date: '2026-07-04'
 title: 'Particle Mill Process & Chipper Machine Control'
-cover: './particle-mill.png'
+cover: './particle-mill.jpg'
 github: ''
 external: ''
 tech:

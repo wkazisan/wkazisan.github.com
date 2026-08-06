@@ -1,7 +1,7 @@
 ---
 date: '2026-07-05'
 title: 'Pick and Place Robotic Arm Control'
-cover: './robotic-arm.png'
+cover: './robotic-arm.jpeg'
 github: ''
 external: ''
 tech:

@@ -3,6 +3,10 @@ date: '2026-06-26'
 title: 'Automatic Boiler Control System'
 github: ''
 external: ''
+ios: ''
+android: ''
+showInProjects: true
+draft: false
 tech:
   - Process Control
   - Temp/Pressure Sensors

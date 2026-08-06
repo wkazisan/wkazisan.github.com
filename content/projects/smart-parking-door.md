@@ -3,6 +3,10 @@ date: '2026-06-23'
 title: 'Smart Car Parking & Automatic Door'
 github: ''
 external: ''
+ios: ''
+android: ''
+showInProjects: true
+draft: false
 tech:
   - Motion Sensors
   - Relay Logic

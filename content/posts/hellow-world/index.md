@@ -1,7 +1,8 @@
 ---
-title: 'Hello World'
-description: 'This is a placeholder post to keep the blog system active.'
-date: '2026-08-06'
+title: "Hello World"
+description: "This is a placeholder post to keep the blog system active."
+date: "2026-08-06"
+slug: "/pensieve/hello-world"
 tags:
   - Automation
   - Electrical

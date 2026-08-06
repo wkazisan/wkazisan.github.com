@@ -7,7 +7,7 @@
 const path = require('path');
 const _ = require('lodash');
 
-// গ্যাটসবিকে স্কিমা সম্পর্কে স্পষ্টভাবে বলে দেওয়া হলো (Image Error Fix)
+// গ্যাটসবিকে স্কিমা সম্পর্কে স্পষ্টভাবে বলে দেওয়া হলো (Image & CTA Error Fix)
 exports.createSchemaCustomization = ({ actions }) => {
   const { createTypes } = actions;
   const typeDefs = `
@@ -24,6 +24,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       showInProjects: Boolean
       draft: Boolean
       cover: File @fileByRelativePath
+      cta: String
     }
   `;
   createTypes(typeDefs);
